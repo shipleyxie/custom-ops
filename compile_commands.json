@@ -1,0 +1,21 @@
+[
+ {
+  "directory": "/media/shipley/Disk21/Project/tfStudy/tf-pcen",
+  "arguments": [
+   "g++",
+   "-I/home/shipley/anaconda3/envs/audio/lib/python3.7/site-packages/tensorflow/include",
+   "-D_GLIBCXX_USE_CXX11_ABI=1",
+   "-fPIC",
+   "-O2",
+   "-std=c++11",
+   "-o",
+   "tensorflow_zero_out/python/ops/_zero_out_ops.so",
+   "tensorflow_zero_out/cc/kernels/zero_out_kernels.cc",
+   "tensorflow_zero_out/cc/ops/zero_out_ops.cc",
+   "-shared",
+   "-L/home/shipley/anaconda3/envs/audio/lib/python3.7/site-packages/tensorflow",
+   "-l:libtensorflow_framework.so.1"
+  ],
+  "file": "tensorflow_zero_out/cc/ops/zero_out_ops.cc"
+ }
+]
